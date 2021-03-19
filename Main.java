@@ -25,11 +25,9 @@ public class Main {
         do {
             int decimal = (int) Math.pow(10, index) * numeros.get(index);
             variavel = decimal;
-            if (index == 0) {
-
-            } else {
-                numeros.set(index, variavel);
-            }
+            if (index > 0) {
+            numeros.set(index, variavel);
+            
             index++;
         } while (index < numeros.size());
 
